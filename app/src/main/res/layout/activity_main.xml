@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                style="@style/commonStyle"
+                android:gravity="center_horizontal"
+                android:text="Team A"
+                android:layout_marginTop="16dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/teamAscore"
+                style="@style/commonStyle"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="56sp"
+                android:padding="20dp"/>
+
+            <Button
+
+                style="@style/commonStyle"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="addThreePointsTeamA"
+                android:text="+3 Points" />
+
+            <Button
+                style="@style/commonStyle"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="addTwoPointsTeamA"
+                android:text="+2 Points" />
+
+            <Button
+                style="@style/commonStyle"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="addOnePointTeamA"
+                android:text="Free Throw" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="#000000"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                style="@style/commonStyle"
+                android:gravity="center_horizontal"
+                android:text="Team B"
+                android:layout_marginTop="16dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/teamBscore"
+                style="@style/commonStyle"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="56sp"
+                android:padding="20dp"
+                />
+
+            <Button
+                style="@style/commonStyle"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="addThreePointsTeamB"
+                android:text="+3 Points" />
+
+            <Button
+                style="@style/commonStyle"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="addTwoPointsTeamB"
+                android:text="+2 Points" />
+
+            <Button
+                style="@style/commonStyle"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="addOnePointTeamB"
+                android:text="Free Throw" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Reset"
+        android:layout_marginTop="20dp"
+        android:onClick="Reset"
+        />
+
+</LinearLayout>
